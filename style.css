@@ -31,12 +31,30 @@ html {
     scroll-padding-top: 9rem;
 }
 
-.header {
+/* .header {
     width: 100%;
     height: 100vh;
     background-image: url(img/TEMP.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+} */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/TEMP.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Mobile-specific styles */
+@media only screen and (max-width: 768px) {
+    .header {
+        background-image: url('img/TEMP-mobile.jpg'); /* Use a different image for mobile */
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 section {
